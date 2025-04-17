@@ -1,0 +1,62 @@
+
+{% extends 'pages/base/base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+
+    {% include "pages/base/navbar.html" %}
+    {% load static %}
+    <!-- Contact 6 - Bootstrap Brain Component -->
+<!-- Contact 3 - Bootstrap Brain Component -->
+<link rel="stylesheet" href="/about/styles.css">
+<section class="bg-light py-3 py-md-5">
+  <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Intro To Software Testing</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on April 14, 2025</div>
+                        <!-- Post categories-->
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded" src="{% static '/images/6664783.jpg' %}" alt="" /></figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">Software testing is a crucial process in software development that involves evaluating a system or its components to ensure they meet specified requirements and function as intended. It helps identify bugs, ensure quality, and provide confidence in the software product before it is released to users.</p>
+                        <div>
+                        <h2>Importance of Software Testing</h2>
+                            <ol class="fs-5 mb-4">
+                                <li><strong>Quality Assurance:</strong> Testing ensures that the software is reliable and meets the quality standards expected by users.</li>
+                                <li><strong>Cost-Effectiveness:</strong> Early detection of defects can significantly reduce the cost of fixing issues later in the development cycle.</li>
+                                <li><strong>Customer Experience:</strong> Thorough testing leads to a better user experience, as it minimizes bugs and enhances functionality.</li>
+                            </ol>
+                        </div>
+
+                        <div>
+                            <h2>The Role of Automated Testing</h2>
+                            <p class="fs-5 mb-4">Automated testing has become increasingly critical in Agile frameworks for several reasons:</p>
+
+                            <ol class="fs-5 mb-4">
+                                <li><strong>Speed and Efficiency:</strong> Automated tests can be executed quickly and repeatedly, significantly reducing the time needed for regression testing after each sprint. </li>
+                                <li><strong>Consistency and Reliability:</strong> Automated tests provide consistent results, eliminating human error associated with manual testing. </li>
+                                <li><strong>Continuous Integration and Continuous Deployment (CI/CD):</strong> Automated testing is integral to CI/CD practices, where code changes are automatically tested and deployed. This ensures that new code does not introduce regressions and that the software remains stable.</li>
+                                <li><strong>Immediate Feedback:</strong> Automated tests provide immediate feedback to developers, enabling them to address issues as they arise. </li>
+                                <li><strong>Scalability:</strong> Automated testing scales more easily, allowing teams to cover more functionality without a proportional increase in effort.</li>
+                                <li><strong>Facilitates Test-Driven Development (TDD):</strong> Automated testing supports TDD practices by allowing developers to write tests before code implementation, ensuring that development aligns with requirements from the outset.</li>
+                            </ol>
+                        </div>
+                    </section>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

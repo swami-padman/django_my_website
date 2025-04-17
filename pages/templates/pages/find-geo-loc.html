@@ -1,0 +1,27 @@
+{% extends 'pages/base/base.html' %}
+
+{% block title %}Find Geo Loc{% endblock title %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'about/styles.css' %}">
+    {% include "pages/base/navbar.html" %}
+
+    <section class="bsb-timeline-3 bg-light py-3 py-md-5 py-xl-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-20 col-md-12 col-xl-10 col-xxl-9">
+                This is work in progress
+
+                <form>
+                  <div class="form-group">
+                    <label for="enter_zipcode">Zip Code</label>
+                    <input class="form-control" id="enter_zipcode" placeholder="Enter zip code">
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </section>
+{% endblock content %}

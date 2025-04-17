@@ -1,0 +1,12 @@
+h4 {
+    margin-left: 40px; /* Adjust the value as needed */
+}
+
+
+
+.custom-section .custom-paragraph {
+    margin-left: 40px;
+    line-height: 1.5; /* Adjust the line height */
+    margin-bottom: 1rem; /* Add margin at the bottom */
+    width: 100%;
+}
