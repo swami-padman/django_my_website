@@ -1,91 +1,202 @@
-
 {% extends 'pages/base/base.html' %}
 
 {% block title %}Home{% endblock title %}
 {% load static %}
 {% block content %}
-    <link rel="stylesheet" href="{% static 'about/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'about/styles_1.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     {% include "pages/base/navbar.html" %}
-    <section class="bg-light py-3 py-md-5 custom-section">
-
-  <!-- Page content-->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-11">
-                <!-- Post content-->
-                <article>
-                    <!-- Post header-->
-                    <header class="mb-4">
-                        <h1 class="fw-bolder mb-1">Software Quality Engineering, Really?</h1>
-                    </header>
-                    <!-- Preview image figure-->
-                    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'images/software_qa.png' %}" alt="" /></figure>
-                    <section class="mb-5">
-                       <div class="fs-5 mb-4">
-    <h2>Improving Software Quality: Strategies and Best Practices</h2>
-    <p>Software quality is paramount in today’s competitive landscape, where user expectations and technological complexities are continually evolving. High-quality software not only enhances user satisfaction but also reduces maintenance costs and improves overall efficiency. Here are several strategies to improve software quality:</p>
-
-   <h3>1. Implement a Robust Testing Strategy</h3>
-    <h4>a. Comprehensive Testing Types</h4>
-    <ul style="margin-left: 40px;">
-        <li><strong>Unit Testing:</strong> Validate individual parts of the code for various combinations of input</li>
-        <li><strong>Component Testing:</strong> Test individual components for expected functionality.</li>
-        <li><strong>Integration Testing:</strong> Ensure that different modules work together as intended.</li>
-        <li><strong>System Testing:</strong> Validate the complete and integrated software system.</li>
-        <li><strong>User Acceptance Testing (UAT):</strong> Gather feedback from real users to confirm the software meets their needs.</li>
-    </ul>
-
-    <h4>b. Automated Testing</h4>
-    <p class="custom-paragraph">Use automated testing tools to execute repetitive tests efficiently, allowing for faster feedback and more consistent results.</p>
-    <h3>2. Adopt Agile Methodologies</h3>
-                           <ul class="custom-paragraph">
-               <li>2 or 3 week sprints for incremental software development</li>
-               <li>CI/CD pipelines to automate testing and deployment</li>
-           </ul>
-
-
-    <h3>3. Emphasize Code Quality</h3>
-           <ul class="custom-paragraph">
-               <li>Conduct regular code reviews</li>
-               <li>Utilize static analysis tools to detect code vulnerabilities</li>
-           </ul>
-
-    <h3>4. Invest in Training and Development</h3>
-                           <ul class="custom-paragraph">
-                               <li>Provide ongoing training for and testers in the latest tools, technologies</li>
-                               <li>Encourage knowledge sharing through workshops, meetups, and documentation</li>
-                           </ul>
-
-    <h3>5. Shift Left Mindset</h3>
-                           <ul class="custom-paragraph">
-                               <li>Quality as a Team Responsibility, not just QA team</li>
-                               <li>Create an environment where team members can freely discuss quality concerns, share ideas</li>
-                           </ul>
-                           <h3>6. Gather User Feedback</h3>
-                           <ul class="custom-paragraph">
-                               <li>UAT and Gather feedback</li>
-                               <li>A/B testing to gauge user suggestions</li>
-                           </ul>
-
-
-                            <h3>7. Establish Clear Requirements</h3>
-                           <ul class="custom-paragraph">
-                               <li>Ensure that requirements are well-defined and understood by all team members</li>
-                               <li>Maintain traceability between requirements and testing to ensure all aspects are covered</li>
-                           </ul>
-
-                            <h3>8. Monitor and Measure Quality</h3>
-                           <ul class="custom-paragraph">
-                               <li>KPI sharing across teams</li>
-                               <li>Regularly review performance data to identify trends and areas for improvement</li>
-                           </ul>
-                        </div>
-                    </section>
-
-                </article>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" style="background-color: rgb(57, 57, 57);>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Swami Padmanabhan</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'images/swami_photo.jpeg' %}" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recognitions">Recognitions</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
-    </section>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Swami
+                        <span style="color: rgb(57, 57, 57)" >Padmanabhan</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Place Lane · Woburn, MA 01801 · 615-275-8058 ·
+                        <a href="mailto:swami.padman@gmail.com">swami.padman@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I am experienced in Software Quality Engineering with 15+ years of experience in designing and implementing automated test frameworks for mobile, web, and API applications.
+                        Used Python (PyTest), Java (TestNG), and Kubernetes/Docker for seamless test execution. Implemented Page Object Model concepts in Playwright, Selenium and Appium.</p>
 
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/swami-padmanabhan-81b95311/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/swami-padman" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Staff Software Development Engineer In Test</h3>
+                            <div class="subheading mb-3">Symbotic</div>
+                            <p>Led the test automation efforts for three different products. </p>
+                            <ul>
+                                <li>MCS - API based Component level testing, started from scratch now at 102 tests per run. Executing it about 10 times per day.</li>
+                                <li>Console - UI Driven E2E testing with Selenium, with Grid via docker with test data setup via API.</li>
+                                <li>Workstation - UI Driven System and Integration testing with Playwright, app built with elektron.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2024 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">QA Manager</h3>
+                            <div class="subheading mb-3">Aspiration Inc</div>
+                            <p>Created test automation with custom design common framework for iOS and Android app with Appium and Sauce Labs as device farm for both the apps.
+                                Reduced Regression Test Timeline by 50% with automated tests. Recognized as the best automation setup within the company. Also setup native test framework in iOS (XCUITests) and Android (Espresso) for dev triggered pipelines.
+                                Implemented new ideas about QA Metrics and Bug identification and definition process.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2022 - Dec 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Test Engineering Lead</h3>
+                            <div class="subheading mb-3">LendingTree</div>
+                            <p>100% Automated testing of plaid/stripe implementation and credit score feature update. Achieved 0% bug leaks to PROD, overall, 95% bug leak reduction.
+                            Mobile UI, API tests and KAFKA events 100% automation coverage. Redesigned test framework by using custom dynamic wait methods.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Dec 2019 - Jan 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Test Automation Lead</h3>
+                            <div class="subheading mb-3">KAR/ADESA</div>
+                            <p>Designed and implemented UFT automated tests to run 24x7 on 54 different UI applications and capture UI metrics.
+                                Automated tests were reporting data to CTO office on a web portal for live health checkup. Mobile app automation for iOS and Android with Appium using inbuilt simulator and emulators.
+                                Monthly product deployment support for Mobile apps using automated tests and manually verifying PROD.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Apr 2014 - Dec 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Test Automation Engineer</h3>
+                            <div class="subheading mb-3">Kenexa IBM</div>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jul 2012 - Mar 2014</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Associate - Projects</h3>
+                            <div class="subheading mb-3">C.T.S</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2008 - Jun 2012</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Anna University (INDIA)</h3>
+                            <div class="subheading mb-3">Bachelor of Engineering</div>
+                            <div>Electronics And Communication Engineering</div>
+                            <p>GPA: 7.9</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2001 - May 2005</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+
+
+                    </ul>
+                    <div class="subheading mb-3">Tools & Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Playwright, Selenium, PyTests
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Framework Design and Implementation
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            E2E and Component Tests
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Review and Hands-on Coding
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a software quality engineer, I enjoy most of my time being outdoors with my camera. Love bird photography; it teaches patience and perseverance. I'm also a meditation and breath-work instructor.
+                    Been practicing for the past 15 years without a break.</p>
+                    <p class="mb-0">Most of my free time is spent exploring the latest technological advancements in the AI world.</p>
+
+                    <p class="mb-0">Self created website, without spending a penny all the way from scratch. Currently it's hosted on render.com and I hope to make more upgrades to it.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="recognitions">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Recognitions</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Test Data Creation Tool
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Test Automation Framework (At Aspiration)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Python Udemy Certified
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 {% endblock content %}

@@ -1,0 +1,115 @@
+
+{% extends 'pages/base/base.html' %}
+
+{% block title %}Home{% endblock title %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'about/styles.css' %}">
+    {% include "pages/base/navbar.html" %}
+    <section class="bg-light py-3 py-md-5 custom-section">
+
+  <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-11">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <h1 class="fw-bolder mb-1">Software Quality Engineering, Really?</h1>
+                    </header>
+                    <!-- Preview image figure-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static 'images/6664783.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/software_qa.png' %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/4380747.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'images/software_qa.png' %}" alt="" /></figure>
+                    <section class="mb-5">
+                       <div class="fs-5 mb-4">
+                            <h2>Improving Software Quality: Strategies and Best Practices</h2>
+                                <p>Software quality is paramount in today’s competitive landscape, where user expectations and technological complexities are continually evolving. High-quality software not only enhances user satisfaction but also reduces maintenance costs and improves overall efficiency. Here are several strategies to improve software quality:</p>
+
+                           <h3>1. Implement a Robust Testing Strategy</h3>
+                                <h4>a. Comprehensive Testing Types</h4>
+                                    <ul style="margin-left: 40px;">
+                                        <li><strong>Unit Testing:</strong> Validate individual parts of the code for various combinations of input</li>
+                                        <li><strong>Component Testing:</strong> Test individual components for expected functionality.</li>
+                                        <li><strong>Integration Testing:</strong> Ensure that different modules work together as intended.</li>
+                                        <li><strong>System Testing:</strong> Validate the complete and integrated software system.</li>
+                                        <li><strong>User Acceptance Testing (UAT):</strong> Gather feedback from real users to confirm the software meets their needs.</li>
+                                    </ul>
+
+                            <h4>b. Automated Testing</h4>
+                                <p class="custom-paragraph">Use automated testing tools to execute repetitive tests efficiently, allowing for faster feedback and more consistent results.</p>
+                            <h3>2. Adopt Agile Methodologies</h3>
+                                <ul class="custom-paragraph">
+                                    <li>2 or 3 week sprints for incremental software development</li>
+                                    <li>CI/CD pipelines to automate testing and deployment</li>
+                                </ul>
+                            <h3>3. Emphasize Code Quality</h3>
+                               <ul class="custom-paragraph">
+                                   <li>Conduct regular code reviews</li>
+                                   <li>Utilize static analysis tools to detect code vulnerabilities</li>
+                               </ul>
+
+                            <h3>4. Invest in Training and Development</h3>
+                               <ul class="custom-paragraph">
+                                   <li>Provide ongoing training for and testers in the latest tools, technologies</li>
+                                   <li>Encourage knowledge sharing through workshops, meetups, and documentation</li>
+                               </ul>
+
+                            <h3>5. Shift Left Mindset</h3>
+                               <ul class="custom-paragraph">
+                                   <li>Quality as a Team Responsibility, not just QA team</li>
+                                   <li>Create an environment where team members can freely discuss quality concerns, share ideas</li>
+                               </ul>
+                           <h3>6. Gather User Feedback</h3>
+                               <ul class="custom-paragraph">
+                                   <li>UAT and Gather feedback</li>
+                                   <li>A/B testing to gauge user suggestions</li>
+                               </ul>
+
+
+                            <h3>7. Establish Clear Requirements</h3>
+                               <ul class="custom-paragraph">
+                                   <li>Ensure that requirements are well-defined and understood by all team members</li>
+                                   <li>Maintain traceability between requirements and testing to ensure all aspects are covered</li>
+                               </ul>
+
+                            <h3>8. Monitor and Measure Quality</h3>
+                               <ul class="custom-paragraph">
+                                   <li>KPI sharing across teams</li>
+                                   <li>Regularly review performance data to identify trends and areas for improvement</li>
+                               </ul>
+                        </div>
+                    </section>
+
+                </article>
+            </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock content %}
