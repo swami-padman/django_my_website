@@ -1,3 +1,4 @@
+
 <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Software Quality Engineer</a>
@@ -8,6 +9,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/#">Home</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'software-testing' %}">Software Testing</a>
         </li>
@@ -21,8 +23,6 @@
             <li><a class="dropdown-item" href="{% url 'check-palindrome' %}">Check Palindrome</a></li>
               <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{% url 'temperature-conversion' %}">Temperature Conversion</a></li>
-
-            <!--li><a class="dropdown-item" href="#">About Me</a></li-->
           </ul>
         </li>
         <li class="nav-item">
@@ -31,14 +31,7 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'contact' %}">Contact</a>
         </li>
-        <!--li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li-->
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
